@@ -4,7 +4,57 @@
 	<body>
 		<div class="wrapper">
 			@@include('html/_header.htm',{})
-			<main class="page"></main>
+			<main class="page">
+				<section class="main-block">
+					<div class="main-block__container">
+						<div class="main-block__body">
+							<div class="main-block__content content-main-block">
+								<h1 class="content-main-block__title">Команда имплантологов доктора Шелега Владимира Леонидовича-ведущего имплантолога Беларуси</h1>
+								<p class="content-main-block__text">Место, где врачи-имплантологи делятся своим опытом с пациентами</p>
+								<a href="" data-da=".media-main-block, 768" class="content-main-block__button button">Читать подробнее</a>
+							</div>
+							<div class="main-block__media media-main-block">
+								<img src="@img/main-page/main-block/image.png" alt="Картинка" />
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="about-implantation">
+					<div class="about-implantation__container">
+						<h2 class="section-title">Самое важное об имплантации</h2>
+						<div class="about-implantation__body">
+							<div class="about-implantation__slider swiper">
+								<div class="about-implantation__wrapper swiper-wrapper">
+									<articte class="about-implantation__slide swiper-slide item-about-implantation">
+										<a href="" class="item-about-implantation__link">
+											<div class="item-about-implantation__image-ibg">
+												<img src="@img/main-page/about-implantation-block/01.png" alt="Картинка" />
+											</div>
+											<h3 class="item-about-implantation__title">Выставка “Турбизнес Осень 2016”. Med Travel Belarus</h3>
+										</a>
+									</articte>
+									<articte class="about-implantation__slide swiper-slide item-about-implantation">
+										<a href="" class="item-about-implantation__link">
+											<div class="item-about-implantation__image-ibg">
+												<img src="@img/main-page/about-implantation-block/01.png" alt="Картинка" />
+											</div>
+											<h3 class="item-about-implantation__title">Выставка “Турбизнес Осень 2016”. Med Travel Belarus</h3>
+										</a>
+									</articte>
+									<articte class="about-implantation__slide swiper-slide item-about-implantation">
+										<a href="" class="item-about-implantation__link">
+											<div class="item-about-implantation__image-ibg">
+												<img src="@img/main-page/about-implantation-block/01.png" alt="Картинка" />
+											</div>
+											<h3 class="item-about-implantation__title">Выставка “Турбизнес Осень 2016”. Med Travel Belarus</h3>
+										</a>
+									</articte>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
 			@@include('html/_footer.htm',{})
 		</div>
 		@@include('html/_popup.htm',{}) @@include('html/_js.htm',{})

@@ -3,12 +3,23 @@
 	background-color: $mainWhite;
 	box-shadow: 0px 5px 29px rgba(0, 0, 0, 0.25);
 	padding: rem(10) 0px;
+	// position: absolute;
+
+	// &._header-scroll {
+	// 	width: 100%;
+	// 	position: fixed;
+	// 	top: -200%;
+	// }
+	// &._header-show {
+	// 	transition: top 0.3s ease 0s;
+	// 	top: 0;
+	// }
 
 	// .header__container
 	&__container {
 		display: flex;
 		align-items: center;
-		gap: rem(15);
+		gap: rem(10);
 		min-height: rem(62);
 
 		@media (max-width: $tablet) {
@@ -19,6 +30,7 @@
 	// .header__logo
 	&__logo {
 		flex: 0 0 200px;
+		z-index: 5;
 
 		img {
 			max-width: 100%;
@@ -33,9 +45,11 @@
 	// .header__button
 	&__button {
 		flex: 0 0 auto;
+		padding: rem(16) rem(18);
 
-		@media (max-width: $tablet) {
-			display: none;
+		@media (max-width: $mobileSmall) {
+			font-size: 16px;
+			width: 100%;
 		}
 	}
 }
@@ -49,6 +63,37 @@
 
 	// .menu__body
 	&__body {
+		@media (max-width: $tablet) {
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: -100%;
+			overflow: auto;
+			background-color: $mainWhite;
+			z-index: 4;
+			transition: all 0.3s ease 0s;
+			padding: rem(120) rem(30);
+
+			&::before {
+				content: '';
+				position: fixed;
+				top: 0;
+				left: -100%;
+				width: 100%;
+				height: 82px;
+				background-color: $mainWhite;
+				z-index: 4;
+			}
+
+			.menu-open & {
+				left: 0;
+
+				&::before {
+					left: 0;
+				}
+			}
+		}
 	}
 
 	// .menu__list
@@ -58,10 +103,20 @@
 		flex-wrap: wrap;
 		row-gap: rem(10);
 		@include adaptiveValue('column-gap', 30, 10);
+
+		@media (max-width: $tablet) {
+			flex-direction: column;
+			margin-bottom: rem(30);
+		}
 	}
 
 	// .menu__item
 	&__item {
+		@media (max-width: $tablet) {
+			&:not(:last-child) {
+				margin-bottom: 10px;
+			}
+		}
 	}
 
 	// .menu__link
@@ -93,10 +148,11 @@
 				}
 			}
 		}
-	}
 
-	@media (max-width: $tablet) {
-		display: none;
+		@media (max-width: $tablet) {
+			padding: rem(10) 0px;
+			font-size: rem(18);
+		}
 	}
 }
 
@@ -122,7 +178,7 @@
 			position: absolute;
 			width: 100%;
 			height: rem(2);
-			background-color: #000;
+			background-color: $mainColor;
 		}
 		&::before {
 			top: 0;
