@@ -1,22 +1,122 @@
 //====================================================================================================
+.header {
+	background-color: $mainWhite;
+	box-shadow: 0px 5px 29px rgba(0, 0, 0, 0.25);
+	padding: rem(10) 0px;
+
+	// .header__container
+	&__container {
+		display: flex;
+		align-items: center;
+		gap: rem(15);
+		min-height: rem(62);
+
+		@media (max-width: $tablet) {
+			justify-content: space-between;
+		}
+	}
+
+	// .header__logo
+	&__logo {
+		flex: 0 0 200px;
+
+		img {
+			max-width: 100%;
+		}
+	}
+
+	// .header__menu
+	&__menu {
+		flex: 1 1 auto;
+	}
+
+	// .header__button
+	&__button {
+		flex: 0 0 auto;
+
+		@media (max-width: $tablet) {
+			display: none;
+		}
+	}
+}
+
+//====================================================================================================
+
+.menu {
+	// .menu__icon
+	&__icon {
+	}
+
+	// .menu__body
+	&__body {
+	}
+
+	// .menu__list
+	&__list {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		row-gap: rem(10);
+		@include adaptiveValue('column-gap', 30, 10);
+	}
+
+	// .menu__item
+	&__item {
+	}
+
+	// .menu__link
+	&__link {
+		font-weight: 400;
+		font-size: rem(14);
+		line-height: math.div(16, 14);
+		color: #464646;
+		white-space: nowrap;
+		padding: rem(4) 0px;
+		position: relative;
+
+		&::after {
+			content: '';
+			position: absolute;
+			left: 0;
+			display: block;
+			margin-top: 3px;
+			width: 0;
+			height: 2px;
+			background-color: $mainOrange;
+			transition: all 0.3s ease 0s;
+		}
+
+		@media (any-hover: hover) {
+			&:hover {
+				&::after {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	@media (max-width: $tablet) {
+		display: none;
+	}
+}
 
 //====================================================================================================
 
 //Burger
-/*
+
 .icon-menu {
 	display: none;
-	@media (max-width: $mobile) {
+	@media (max-width: $tablet) {
 		display: block;
 		position: relative;
-		width: rem(30);
+		flex: 0 0 rem(30);
 		height: rem(18);
 		cursor: pointer;
 		z-index: 5;
 		span,
 		&::before,
 		&::after {
-			content: "";
+			content: '';
 			transition: all 0.3s ease 0s;
 			right: 0;
 			position: absolute;
@@ -51,4 +151,3 @@
 		}
 	}
 }
-*/
