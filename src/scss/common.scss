@@ -22,7 +22,15 @@
 .section-title {
 	font-weight: 600;
 	font-size: rem(30);
-	@include adaptiveValue('font-size', 30, 18);
+	@include adaptiveValue('font-size', 30, 24);
 	line-height: math.div(36, 30);
 	text-align: center;
+
+	&--white {
+		color: $mainWhite;
+	}
+
+	@media (max-width: $mobile) {
+		text-align: left;
+	}
 }

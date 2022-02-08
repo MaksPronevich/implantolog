@@ -49,7 +49,7 @@
 	&__title {
 		font-weight: 700;
 		font-size: rem(36);
-		@include adaptiveValue('font-size', 36, 20);
+		@include adaptiveValue('font-size', 36, 25);
 		line-height: math.div(44, 36);
 		color: $mainColor;
 
