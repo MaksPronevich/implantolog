@@ -398,3 +398,40 @@
 		}
 	}
 }
+
+//====================================================================================================
+
+.reviews-block {
+	// .reviews-block__container
+	&__container {
+		position: relative;
+	}
+
+	// .reviews-block__body
+	&__body {
+	}
+
+	// .reviews-block__slider
+	&__slider {
+	}
+
+	// .reviews-block__wrapper
+	&__wrapper {
+	}
+
+	// .reviews-block__slide
+	&__slide {
+	}
+}
+
+.item-reviews-block {
+	min-height: 197px;
+
+	// .item-reviews-block__image-ibg
+	&__image-ibg {
+		// padding-bottom: percent(197, 320);
+		padding-bottom: 66%;
+	}
+}
+
+//====================================================================================================

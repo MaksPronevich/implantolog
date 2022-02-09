@@ -213,6 +213,11 @@ body {
     font-size: calc(1.5rem + 0.375 * (100vw - 20rem) / 45.3125);
   }
 }
+@media (min-width: 61.99875em) {
+  .section-title._secure-padding {
+    padding: 0 10rem;
+  }
+}
 .section-title--white {
   color: #ffffff;
 }
@@ -903,6 +908,16 @@ body {
   .info-consultation-block__item span {
     text-align: center;
   }
+}
+
+.reviews-block__container {
+  position: relative;
+}
+.item-reviews-block {
+  min-height: 197px;
+}
+.item-reviews-block__image-ibg {
+  padding-bottom: 66%;
 }
 .swiper {
   overflow: hidden;

@@ -26,6 +26,12 @@
 	line-height: math.div(36, 30);
 	text-align: center;
 
+	&._secure-padding {
+		@media (min-width: $tablet) {
+			padding: 0 rem(160);
+		}
+	}
+
 	&--white {
 		color: $mainWhite;
 	}
