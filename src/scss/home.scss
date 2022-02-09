@@ -1,4 +1,3 @@
-//====================================================================================================
 .main-block {
 	background: url('@img/main-page/main-block/bg.png') center / cover no-repeat;
 	position: relative;
@@ -107,8 +106,10 @@
 .about-implantation {
 	@include adaptiveValue('padding-top', 125, 40);
 	@include adaptiveValue('padding-bottom', 125, 40);
+
 	// .about-implantation__container
 	&__container {
+		position: relative;
 	}
 
 	// .about-implantation__body
@@ -166,6 +167,234 @@
 
 		@media (max-width: $mobile) {
 			padding: rem(14) rem(14) rem(20);
+		}
+	}
+}
+
+//====================================================================================================
+
+.doctors {
+	background-color: $mainOrange;
+	@include adaptiveValue('padding-top', 55, 25);
+	@include adaptiveValue('padding-bottom', 170, 50);
+
+	// .doctors__container
+	&__container {
+		position: relative;
+	}
+
+	// .doctors__body
+	&__body {
+		@include adaptiveValue('margin-top', 75, 30);
+	}
+
+	// .doctors__slider
+	&__slider {
+		padding: rem(15);
+		margin: rem(-15);
+	}
+
+	// .doctors__wrapper
+	&__wrapper {
+	}
+
+	// .doctors__slide
+	&__slide {
+	}
+}
+
+//====================================================================================================
+
+.item-doctors {
+	background-color: $mainWhite;
+	box-shadow: 0px 10px 14px -1px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+
+	display: grid;
+	grid-template-columns: 1fr percent(259, 496);
+	align-items: center;
+
+	&::after {
+		content: '';
+		display: block;
+		background: rgba(231, 155, 100, 0.5);
+		filter: blur(146px);
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: percent(340, 496);
+		height: percent(306, 306);
+	}
+
+	// .item-doctors__info
+	&__info {
+	}
+
+	// .item-doctors__media
+	&__media {
+		align-self: end;
+		justify-self: end;
+	}
+}
+
+//====================================================================================================
+
+.info-item-doctors {
+	padding: 30px 0px 30px 30px;
+	position: relative;
+	z-index: 2;
+
+	@media (max-width: $mobile) {
+		padding: 15px 0px 15px 15px;
+	}
+
+	// .info-item-doctors__title
+	&__title {
+		font-weight: 600;
+		@include adaptiveValue('font-size', 24, 18);
+		line-height: math.div(26, 24);
+		letter-spacing: 0.035em;
+		text-transform: capitalize;
+		color: $mainOrange;
+
+		&:not(:last-child) {
+			margin-bottom: em(15, 24);
+		}
+	}
+
+	// .info-item-doctors__text
+	&__text {
+		font-weight: 500;
+		@include adaptiveValue('font-size', 14, 9);
+		line-height: math.div(16, 14);
+		letter-spacing: 0.035em;
+		color: #4d4d4d;
+
+		&:not(:last-child) {
+			margin-bottom: em(30, 14);
+		}
+	}
+
+	// .info-item-doctors__link
+	&__link {
+		display: inline-block;
+		font-weight: 600;
+		font-size: rem(14);
+		line-height: math.div(17, 14);
+		color: $mainOrange;
+		padding: rem(12) rem(29);
+		border: 1px solid $mainOrange;
+		border-radius: 5px;
+		transition: all 0.3s ease 0s;
+
+		@media (max-width: $mobile) {
+			font-size: 11px;
+			padding: rem(9) rem(20);
+		}
+
+		@media (any-hover: hover) {
+			&:hover {
+				color: $mainWhite;
+				background-color: $mainOrange;
+			}
+		}
+	}
+}
+
+//====================================================================================================
+
+.media-item-doctors {
+	position: relative;
+	z-index: 1;
+
+	img {
+		max-width: 100%;
+	}
+}
+
+//====================================================================================================
+
+.consultation-block {
+	@include adaptiveValue('padding-top', 175, 65);
+	@include adaptiveValue('padding-bottom', 175, 65);
+
+	// .consultation-block__container
+	&__container {
+	}
+
+	// .consultation-block__body
+	&__body {
+		display: grid;
+		grid-template-columns: 1fr percent(495, 1015);
+		@include adaptiveValue('column-gap', 110, 30, 992, 768, 1);
+		align-items: center;
+		justify-items: center;
+		row-gap: rem(40);
+
+		@media (max-width: $mobile) {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	// .consultation-block__info
+	&__info {
+	}
+
+	// .consultation-block__image
+	&__image {
+		img {
+			max-width: 100%;
+		}
+	}
+}
+
+//====================================================================================================
+
+.info-consultation-block {
+	// .info-consultation-block__list
+	&__list {
+		margin-top: rem(40);
+	}
+
+	// .info-consultation-block__item
+	&__item {
+		display: flex;
+		align-items: center;
+		gap: rem(20);
+
+		@media (max-width: $mobile) {
+			flex-direction: column;
+		}
+
+		&:not(:last-child) {
+			margin-bottom: em(25, 14);
+		}
+
+		&::before {
+			font-size: rem(28);
+			width: rem(28);
+			height: rem(28);
+			color: $mainOrange;
+
+			@media (max-width: $mobile) {
+				font-size: rem(36);
+				width: rem(36);
+				height: rem(36);
+			}
+		}
+
+		span {
+			font-weight: 400;
+			font-size: rem(14);
+			line-height: math.div(20, 14);
+			letter-spacing: -0.015em;
+			color: rgba(0, 0, 0, 0.64);
+
+			@media (max-width: $mobile) {
+				text-align: center;
+			}
 		}
 	}
 }
