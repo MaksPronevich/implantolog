@@ -5,15 +5,16 @@
 	padding: rem(10) 0px;
 	// position: absolute;
 
-	// &._header-scroll {
-	// 	width: 100%;
-	// 	position: fixed;
-	// 	top: -200%;
-	// }
-	// &._header-show {
-	// 	transition: top 0.3s ease 0s;
-	// 	top: 0;
-	// }
+	&._header-scroll {
+		width: 100%;
+		position: fixed;
+		top: -200%;
+		z-index: 100;
+	}
+	&._header-show {
+		transition: top 0.5s ease 0s;
+		top: 0;
+	}
 
 	// .header__container
 	&__container {

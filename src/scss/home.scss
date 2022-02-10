@@ -176,7 +176,9 @@
 .doctors {
 	background-color: $mainOrange;
 	@include adaptiveValue('padding-top', 55, 25);
-	@include adaptiveValue('padding-bottom', 170, 50);
+	@include adaptiveValue('padding-bottom', 160, 50);
+	// @include adaptiveValue('padding-top', 125, 40);
+	// @include adaptiveValue('padding-bottom', 125, 40);
 
 	// .doctors__container
 	&__container {
@@ -317,8 +319,11 @@
 //====================================================================================================
 
 .consultation-block {
-	@include adaptiveValue('padding-top', 175, 65);
-	@include adaptiveValue('padding-bottom', 175, 65);
+	// @include adaptiveValue('padding-top', 175, 65);
+	// @include adaptiveValue('padding-bottom', 175, 65);
+
+	@include adaptiveValue('padding-top', 125, 40);
+	@include adaptiveValue('padding-bottom', 125, 40);
 
 	// .consultation-block__container
 	&__container {
@@ -402,8 +407,11 @@
 //====================================================================================================
 
 .reviews-block {
-	@include adaptiveValue('padding-top', 45, 30);
-	@include adaptiveValue('padding-bottom', 200, 65);
+	// @include adaptiveValue('padding-top', 45, 30);
+	// @include adaptiveValue('padding-bottom', 200, 65);
+
+	@include adaptiveValue('padding-top', 125, 40);
+	@include adaptiveValue('padding-bottom', 125, 40);
 	// .reviews-block__container
 	&__container {
 		position: relative;
@@ -445,13 +453,7 @@
 
 	// .item-reviews-block__image-ibg
 	&__image-ibg {
-		// border-radius: 5px;
-		// overflow: hidden;
 		padding-bottom: percent(197, 320);
-
-		img {
-			// border-radius: 5px;
-		}
 	}
 }
 

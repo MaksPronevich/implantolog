@@ -215,8 +215,6 @@ function initSliders() {
 				nextEl: '.reviews-slider-arrow-next',
 			},
 
-			// Брейкпоинты
-
 			breakpoints: {
 				0: {
 					slidesPerView: 1.2,
