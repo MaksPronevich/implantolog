@@ -1,3 +1,27 @@
 //====================================================================================================
+.footer {
+	background-color: $mainOrange;
+	padding: rem(10) 0;
+
+	// .footer__container
+	&__container {
+		min-height: rem(35);
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	// .footer__text
+	&__text {
+		font-size: rem(12);
+		line-height: math.div(14, 12);
+		text-transform: uppercase;
+		color: $mainWhite;
+
+		@media (max-width: $mobile) {
+			font-size: rem(10);
+		}
+	}
+}
 
 //====================================================================================================

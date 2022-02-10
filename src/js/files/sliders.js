@@ -152,7 +152,7 @@ function initSliders() {
 			breakpoints: {
 				0: {
 					slidesPerView: 1.1,
-					spaceBetween: 10,
+					spaceBetween: 18,
 				},
 				768: {
 					slidesPerView: 2,
@@ -165,6 +165,70 @@ function initSliders() {
 
 			// События
 			on: {},
+		});
+	}
+
+	if (document.querySelector('.reviews-block__slider')) {
+		new Swiper('.reviews-block__slider', {
+			modules: [Navigation],
+			observer: true,
+			observeParents: true,
+			slidesPerView: 3,
+			spaceBetween: 28,
+			// autoHeight: false,
+			// speed: 800,
+
+			//touchRatio: 0,
+			//simulateTouch: false,
+			//loop: true,
+			//preloadImages: false,
+			//lazy: true,
+
+			/*
+			// Эффекты
+			effect: 'fade',
+			autoplay: {
+				delay: 3000,
+				disableOnInteraction: false,
+			},
+			*/
+
+			// Пагинация
+			/*
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+			*/
+
+			// Скроллбар
+			/*
+			scrollbar: {
+				el: '.swiper-scrollbar',
+				draggable: true,
+			},
+			*/
+
+			// Кнопки "влево/вправо"
+			navigation: {
+				prevEl: '.reviews-slider-arrow-prev',
+				nextEl: '.reviews-slider-arrow-next',
+			},
+
+			// Брейкпоинты
+
+			breakpoints: {
+				0: {
+					slidesPerView: 1.2,
+					spaceBetween: 20,
+				},
+				768: {
+					slidesPerView: 2,
+				},
+				992: {
+					slidesPerView: 3,
+				},
+			},
 		});
 	}
 }

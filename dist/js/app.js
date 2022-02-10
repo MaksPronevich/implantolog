@@ -3534,7 +3534,7 @@
                 breakpoints: {
                     0: {
                         slidesPerView: 1.1,
-                        spaceBetween: 10
+                        spaceBetween: 18
                     },
                     768: {
                         slidesPerView: 2,
@@ -3543,6 +3543,29 @@
                     992: {}
                 },
                 on: {}
+            });
+            if (document.querySelector(".reviews-block__slider")) new core(".reviews-block__slider", {
+                modules: [ Navigation ],
+                observer: true,
+                observeParents: true,
+                slidesPerView: 3,
+                spaceBetween: 28,
+                navigation: {
+                    prevEl: ".reviews-slider-arrow-prev",
+                    nextEl: ".reviews-slider-arrow-next"
+                },
+                breakpoints: {
+                    0: {
+                        slidesPerView: 1.2,
+                        spaceBetween: 20
+                    },
+                    768: {
+                        slidesPerView: 2
+                    },
+                    992: {
+                        slidesPerView: 3
+                    }
+                }
             });
         }
         window.addEventListener("load", (function(e) {

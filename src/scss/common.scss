@@ -64,12 +64,36 @@
 .slider-arrow-next {
 	width: rem(56);
 	height: rem(56);
-	border: 2px solid $mainWhite;
 	border-radius: 50%;
 	position: relative;
 
 	&.swiper-button-disabled {
 		cursor: default;
+	}
+
+	&::before {
+		font-weight: 400;
+		font-size: rem(25);
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-45%, -50%);
+		transition: background-color 0.3s ease 0s, color 0.3s ease 0s;
+	}
+}
+
+.slider-arrow-prev {
+	transform: rotate(180deg);
+}
+
+.slider-arrow-next {
+}
+
+.doctors-slider-arrow-prev,
+.doctors-slider-arrow-next {
+	border: 2px solid $mainWhite;
+
+	&.swiper-button-disabled {
 		border: 2px solid rgba($mainWhite, 0.5);
 
 		&::before {
@@ -88,14 +112,7 @@
 	}
 
 	&::before {
-		font-weight: 400;
-		font-size: rem(25);
 		color: $mainWhite;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-45%, -50%);
-		transition: background-color 0.3s ease 0s, color 0.3s ease 0s;
 	}
 
 	@media (any-hover: hover) {
@@ -109,11 +126,41 @@
 	}
 }
 
-.slider-arrow-prev {
-	transform: rotate(180deg);
-}
+.reviews-slider-arrow-prev,
+.reviews-slider-arrow-next {
+	border: 2px solid $mainOrange;
 
-.slider-arrow-next {
+	&.swiper-button-disabled {
+		border: 2px solid rgba($mainOrange, 0.5);
+
+		&::before {
+			color: rgba($mainOrange, 0.5);
+		}
+
+		@media (any-hover: hover) {
+			&:hover {
+				background: none;
+
+				&::before {
+					color: rgba($mainOrange, 0.5);
+				}
+			}
+		}
+	}
+
+	&::before {
+		color: $mainOrange;
+	}
+
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: $mainOrange;
+
+			&::before {
+				color: $mainWhite;
+			}
+		}
+	}
 }
 
 //====================================================================================================
