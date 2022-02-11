@@ -83,14 +83,16 @@ function initSliders() {
 
 			breakpoints: {
 				0: {
-					slidesPerView: 1.3,
+					slidesPerView: 1.4,
 					spaceBetween: 20,
 				},
-				768: {
+				479.98: {
 					slidesPerView: 2,
 				},
-				992: {
+				768: {
 					slidesPerView: 3,
+				},
+				992: {
 					spaceBetween: 28,
 				},
 			},
@@ -100,8 +102,8 @@ function initSliders() {
 		});
 	}
 
-	if (document.querySelector('.doctors__slider')) {
-		new Swiper('.doctors__slider', {
+	if (document.querySelector('.doctors-block__slider')) {
+		new Swiper('.doctors-block__slider', {
 			modules: [Navigation],
 			observer: true,
 			observeParents: true,
@@ -154,6 +156,11 @@ function initSliders() {
 					slidesPerView: 1.1,
 					spaceBetween: 18,
 				},
+
+				479.98: {
+					slidesPerView: 1.5,
+				},
+
 				768: {
 					slidesPerView: 2,
 					spaceBetween: 25,
@@ -219,6 +226,139 @@ function initSliders() {
 				0: {
 					slidesPerView: 1.2,
 					spaceBetween: 20,
+				},
+				479.98: {
+					slidesPerView: 1.7,
+				},
+				768: {
+					slidesPerView: 2,
+				},
+				992: {
+					slidesPerView: 3,
+				},
+			},
+		});
+	}
+
+	if (document.querySelector('.portfolio-block__slider')) {
+		new Swiper('.portfolio-block__slider', {
+			modules: [Navigation],
+			observer: true,
+			observeParents: true,
+			slidesPerView: 3,
+			spaceBetween: 28,
+			// autoHeight: false,
+			// speed: 800,
+
+			//touchRatio: 0,
+			//simulateTouch: false,
+			//loop: true,
+			//preloadImages: false,
+			//lazy: true,
+
+			/*
+			// Эффекты
+			effect: 'fade',
+			autoplay: {
+				delay: 3000,
+				disableOnInteraction: false,
+			},
+			*/
+
+			// Пагинация
+			/*
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+			*/
+
+			// Скроллбар
+			/*
+			scrollbar: {
+				el: '.swiper-scrollbar',
+				draggable: true,
+			},
+			*/
+
+			// Кнопки "влево/вправо"
+			navigation: {
+				prevEl: '.portfolio-slider-arrow-prev',
+				nextEl: '.portfolio-slider-arrow-next',
+			},
+
+			breakpoints: {
+				0: {
+					slidesPerView: 1.2,
+					spaceBetween: 20,
+				},
+				479.98: {
+					slidesPerView: 1.7,
+				},
+				768: {
+					slidesPerView: 2,
+				},
+				992: {
+					slidesPerView: 3,
+				},
+			},
+		});
+	}
+
+	if (document.querySelector('.awards-block__slider')) {
+		new Swiper('.awards-block__slider', {
+			modules: [Navigation],
+			observer: true,
+			observeParents: true,
+			slidesPerView: 3,
+			spaceBetween: 28,
+			// autoHeight: false,
+			// speed: 800,
+
+			//touchRatio: 0,
+			//simulateTouch: false,
+			//loop: true,
+			//preloadImages: false,
+			//lazy: true,
+
+			/*
+			// Эффекты
+			effect: 'fade',
+			autoplay: {
+				delay: 3000,
+				disableOnInteraction: false,
+			},
+			*/
+
+			// Пагинация
+			/*
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+			*/
+
+			// Скроллбар
+			/*
+			scrollbar: {
+				el: '.swiper-scrollbar',
+				draggable: true,
+			},
+			*/
+
+			// Кнопки "влево/вправо"
+			navigation: {
+				prevEl: '.awards-slider-arrow-prev',
+				nextEl: '.awards-slider-arrow-next',
+			},
+
+			breakpoints: {
+				0: {
+					slidesPerView: 1.2,
+					spaceBetween: 20,
+				},
+				479.98: {
+					slidesPerView: 1.7,
 				},
 				768: {
 					slidesPerView: 2,

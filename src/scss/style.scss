@@ -70,6 +70,7 @@ body {
 	// Прижимаем footer
 	> main {
 		flex: 1 1 auto;
+		margin-top: rem(82);
 	}
 	// Фикс для слайдеров
 	> * {
@@ -135,4 +136,7 @@ body {
 @import 'footer';
 
 // Подключение стилей отдельных страниц
-@import 'home';
+@import 'pages/home';
+@import 'pages/reviews';
+@import 'pages/doctors';
+@import 'pages/blog';

@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220210170439">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220211172244">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,18 +16,18 @@
 	<div class="wrapper">
 		<header data-scroll="82" data-scroll-show class="header" data-lp>
 			<div class="header__container">
-				<a href="" class="header__logo"><img src="img/logo.svg" alt="Иплантолог.by" /></a>
+				<a href="index.html" class="header__logo"><img src="img/logo.svg" alt="Иплантолог.by" /></a>
 				<div class="header__menu menu">
 					<nav class="menu__body">
 						<ul class="menu__list">
-							<li class="menu__item"><a href="" class="menu__link">Наши статьи</a></li>
-							<li class="menu__item"><a href="" class="menu__link">Врачи</a></li>
-							<li class="menu__item"><a href="#reviews-block" class="menu__link">Отзывы</a></li>
+							<li class="menu__item"><a href="blog.html" class="menu__link">Наши статьи</a></li>
+							<li class="menu__item"><a href="doctors.html" class="menu__link">Врачи</a></li>
+							<li class="menu__item"><a href="reviews.html" class="menu__link">Отзывы</a></li>
 							<li class="menu__item"><a href="" class="menu__link">Примеры работ</a></li>
 						</ul>
 					</nav>
 				</div>
-				<button type="button" data-da=".menu__body, 991.98" class="header__button button" data-popup="#consultation">Записаться на консультацию</button>
+				<button type="button" data-da=".menu__body, 991.98" class="header__button button button--header" data-popup="#consultation">Записаться на консультацию</button>
 				<button type="button" class="menu__icon icon-menu"><span></span></button>
 			</div>
 		</header>
@@ -39,7 +39,7 @@
 						<div class="main-block__content content-main-block">
 							<h1 class="content-main-block__title">Команда имплантологов доктора Шелега Владимира Леонидовича-ведущего имплантолога Беларуси</h1>
 							<p class="content-main-block__text">Место, где врачи-имплантологи делятся своим опытом с пациентами</p>
-							<a href="" data-da=".media-main-block, 767.98" class="content-main-block__button button">Читать подробнее</a>
+							<a href="" data-da=".media-main-block, 767.98" class="content-main-block__button button button--main-block">Читать подробнее</a>
 						</div>
 						<div class="main-block__media media-main-block">
 							<picture><source srcset="img/main-page/main-block/image.webp" type="image/webp"><img src="img/main-page/main-block/image.png" alt="Картинка" /></picture>
@@ -50,7 +50,7 @@
 
 			<section class="about-implantation">
 				<div class="about-implantation__container">
-					<h2 class="section-title _secure-padding">Самое важное об имплантации</h2>
+					<h2 class="title _secure-padding">Самое важное об имплантации</h2>
 					<div class="about-implantation__body">
 						<div class="about-implantation__slider swiper">
 							<div class="about-implantation__wrapper swiper-wrapper">
@@ -59,7 +59,7 @@
 										<div class="item-about-implantation__image-ibg">
 											<picture><source data-srcset="img/main-page/about-implantation-block/01.webp" type="image/webp"><img data-src="img/main-page/about-implantation-block/01.png" alt="Картинка" /></picture>
 										</div>
-										<h3 class="item-about-implantation__title">Выставка “Турбизнес Осень 2016”. Med Travel Belarus</h3>
+										<h4 class="item-about-implantation__title">Выставка “Турбизнес Осень 2016”. Med Travel Belarus</h4>
 									</a>
 								</div>
 								<div class="about-implantation__slide swiper-slide item-about-implantation">
@@ -67,7 +67,7 @@
 										<div class="item-about-implantation__image-ibg">
 											<picture><source data-srcset="img/main-page/about-implantation-block/01.webp" type="image/webp"><img data-src="img/main-page/about-implantation-block/01.png" alt="Картинка" /></picture>
 										</div>
-										<h3 class="item-about-implantation__title">Выставка “Турбизнес Осень 2016”. Med Travel Belarus</h3>
+										<h4 class="item-about-implantation__title">Выставка “Турбизнес Осень 2016”. Med Travel Belarus</h4>
 									</a>
 								</div>
 								<div class="about-implantation__slide swiper-slide item-about-implantation">
@@ -75,7 +75,7 @@
 										<div class="item-about-implantation__image-ibg">
 											<picture><source data-srcset="img/main-page/about-implantation-block/01.webp" type="image/webp"><img data-src="img/main-page/about-implantation-block/01.png" alt="Картинка" /></picture>
 										</div>
-										<h3 class="item-about-implantation__title">Выставка “Турбизнес Осень 2016”. Med Travel Belarus</h3>
+										<h4 class="item-about-implantation__title">Выставка “Турбизнес Осень 2016”. Med Travel Belarus</h4>
 									</a>
 								</div>
 							</div>
@@ -85,66 +85,67 @@
 				</div>
 			</section>
 
-			<section class="doctors">
-				<div class="doctors__container">
-					<h2 class="section-title section-title--white _secure-padding">Наши врачи</h2>
-					<div class="doctors__body">
-						<div class="doctors__slider swiper">
-							<div class="doctors__wrapper swiper-wrapper">
-								<article class="doctors__slide swiper-slide item-doctors">
-									<div class="item-doctors__info info-item-doctors">
-										<h3 class="info-item-doctors__title">Вилькицкая кристина Вадимовна</h3>
-										<p class="info-item-doctors__text">Кандидат наук, доцент Высшая квалификационная категория</p>
-										<a href="" class="info-item-doctors__link">Подробнее</a>
+			<section class="doctors-block">
+				<div class="doctors-block__container">
+					<h2 class="title title--white _secure-padding">Наши врачи</h2>
+					<h3 class="subtitle subtitle--white _secure-padding">Прошли многоступенчатый квалификационный отбор. Внимательные, чуткие и отзывчивые специалисты.</h3>
+					<div class="doctors-block__body">
+						<div class="doctors-block__slider swiper">
+							<div class="doctors-block__wrapper swiper-wrapper">
+								<article class="doctors-block__slide swiper-slide doctors-item">
+									<div class="doctors-item__info doctors-item-info">
+										<h4 class="doctors-item-info__title">Вилькицкая кристина Вадимовна</h4>
+										<p class="doctors-item-info__text">Кандидат наук, доцент Высшая квалификационная категория</p>
+										<a href="doctor.html" class="doctors-item-info__link">Подробнее</a>
 									</div>
-									<div class="item-doctors__media media-item-doctors">
+									<div class="doctors-item__media">
 										<picture><source srcset="img/main-page/doctors/01.webp" type="image/webp"><img src="img/main-page/doctors/01.png" alt="Картинка" /></picture>
 									</div>
 								</article>
-								<article class="doctors__slide swiper-slide item-doctors">
-									<div class="item-doctors__info info-item-doctors">
-										<h3 class="info-item-doctors__title">Каленкович Юрий Владимирович</h3>
-										<p class="info-item-doctors__text">Хирург-имплантолог. Операции All-On-4/6, синус лифтинг, классическая имплантация.</p>
-										<a href="" class="info-item-doctors__link">Подробнее</a>
+								<article class="doctors-block__slide swiper-slide doctors-item">
+									<div class="doctors-item__info doctors-item-info">
+										<h4 class="doctors-item-info__title">Каленкович Юрий Владимирович</h4>
+										<p class="doctors-item-info__text">Хирург-имплантолог. Операции All-On-4/6, синус лифтинг, классическая имплантация.</p>
+										<a href="doctor.html" class="doctors-item-info__link">Подробнее</a>
 									</div>
-									<div class="item-doctors__media media-item-doctors">
+									<div class="doctors-item__media">
 										<picture><source srcset="img/main-page/doctors/02.webp" type="image/webp"><img src="img/main-page/doctors/02.png" alt="Картинка" /></picture>
 									</div>
 								</article>
-								<article class="doctors__slide swiper-slide item-doctors">
-									<div class="item-doctors__info info-item-doctors">
-										<h3 class="info-item-doctors__title">Шелег Владимир Леонидович</h3>
-										<p class="info-item-doctors__text">Врач имплантолог-хирург. Ведущий хирург. Первая квалификационная категория</p>
-										<a href="" class="info-item-doctors__link">Подробнее</a>
+								<article class="doctors-block__slide swiper-slide doctors-item">
+									<div class="doctors-item__info doctors-item-info">
+										<h4 class="doctors-item-info__title">Шелег Владимир Леонидович</h4>
+										<p class="doctors-item-info__text">Врач имплантолог-хирург. Ведущий хирург. Первая квалификационная категория</p>
+										<a href="doctor.html" class="doctors-item-info__link">Подробнее</a>
 									</div>
-									<div class="item-doctors__media media-item-doctors">
+									<div class="doctors-item__media">
 										<picture><source srcset="img/main-page/doctors/03.webp" type="image/webp"><img src="img/main-page/doctors/03.png" alt="Картинка" /></picture>
 									</div>
 								</article>
-								<article class="doctors__slide swiper-slide item-doctors">
-									<div class="item-doctors__info info-item-doctors">
-										<h3 class="info-item-doctors__title">Русецкий Никита Андреевич</h3>
-										<p class="info-item-doctors__text">Хирург. Одиночная имплантация. Пластика десны. Удаление зубов.</p>
-										<a href="" class="info-item-doctors__link">Подробнее</a>
+								<article class="doctors-block__slide swiper-slide doctors-item">
+									<div class="doctors-item__info doctors-item-info">
+										<h4 class="doctors-item-info__title">Русецкий Никита Андреевич</h4>
+										<p class="doctors-item-info__text">Хирург. Одиночная имплантация. Пластика десны. Удаление зубов.</p>
+										<a href="doctor.html" class="doctors-item-info__link">Подробнее</a>
 									</div>
-									<div class="item-doctors__media media-item-doctors">
+									<div class="doctors-item__media">
 										<picture><source srcset="img/main-page/doctors/04.webp" type="image/webp"><img src="img/main-page/doctors/04.png" alt="Картинка" /></picture>
 									</div>
 								</article>
-								<article class="doctors__slide swiper-slide item-doctors">
-									<div class="item-doctors__info info-item-doctors">
-										<h3 class="info-item-doctors__title">Вербицкая Александра Александровна</h3>
-										<p class="info-item-doctors__text">Имплантолог. Точная имплантация по шаблонам. Сложные случаи</p>
-										<a href="" class="info-item-doctors__link">Подробнее</a>
+								<article class="doctors-block__slide swiper-slide doctors-item">
+									<div class="doctors-item__info doctors-item-info">
+										<h4 class="doctors-item-info__title">Вербицкая Александра Александровна</h4>
+										<p class="doctors-item-info__text">Имплантолог. Точная имплантация по шаблонам. Сложные случаи</p>
+										<a href="doctor.html" class="doctors-item-info__link">Подробнее</a>
 									</div>
-									<div class="item-doctors__media media-item-doctors">
+									<div class="doctors-item__media">
 										<picture><source srcset="img/main-page/doctors/05.webp" type="image/webp"><img src="img/main-page/doctors/05.png" alt="Картинка" /></picture>
 									</div>
 								</article>
 							</div>
 						</div>
 					</div>
-					<div class="slider-arrows">
+					<div class="slider-arrows slider-arrows--white">
 						<button type="button" class="slider-arrow-prev doctors-slider-arrow-prev _icon-arrow"></button>
 						<button type="button" class="slider-arrow-next doctors-slider-arrow-next _icon-arrow"></button>
 					</div>
@@ -155,7 +156,7 @@
 				<div class="consultation-block__container">
 					<div class="consultation-block__body">
 						<div class="consultation-block__info info-consultation-block">
-							<h2 class="section-title section-title--left">Консультация наших специалистов</h2>
+							<h2 class="title title--left-center">Консультация наших специалистов</h2>
 							<ul class="info-consultation-block__list">
 								<li class="info-consultation-block__item _icon-check">
 									<span>Наши врачи проводят как очные, так и дистанционные консультации</span>
@@ -167,6 +168,9 @@
 									<span>Дистанционная консультация - идеальный способ для иностранных пациентов узнать стоимость, сроки и вид лечения</span>
 								</li>
 							</ul>
+							<button type="button" class="info-consultation-block__button button button--consultation-block" data-popup="#consultation">
+								Записаться на консультацию
+							</button>
 						</div>
 						<div class="consultation-block__image">
 							<picture><source data-srcset="img/main-page/consultation-block/image.webp" type="image/webp"><img data-src="img/main-page/consultation-block/image.png" alt="Картинка" /></picture>
@@ -175,41 +179,44 @@
 				</div>
 			</section>
 
-			<section class="reviews-block" id="reviews-block">
+			<section class="reviews-block">
 				<div class="reviews-block__container">
-					<h2 class="section-title _secure-padding">Видеоотзывы</h2>
+					<h2 class="title _secure-padding">Отзывы пациентов</h2>
+					<h3 class="subtitle _secure-padding">
+						Не каждый готов рассказать свою историю на камеру. Новая улыбка окрыляет и добавляет уверенности в себе! Не верите? Смотрите!
+					</h3>
 					<div class="reviews-block__body">
 						<div class="reviews-block__slider swiper">
 							<div class="reviews-block__wrapper swiper-wrapper">
-								<div class="reviews-block__slide swiper-slide item-reviews-block" data-popup="#reviews" data-popup-youtube="-krI-9EAU2I">
-									<div class="item-reviews-block__image-ibg">
+								<a href="#" class="reviews-block__slide swiper-slide reviews-item" tabindex="0" data-popup="#reviews" data-popup-youtube="-krI-9EAU2I">
+									<div class="reviews-item__image-ibg">
 										<picture><source data-srcset="img/main-page/reviews-block/01.webp" type="image/webp"><img data-src="img/main-page/reviews-block/01.png" alt="Картинка" /></picture>
 									</div>
-								</div>
-								<div class="reviews-block__slide swiper-slide item-reviews-block" data-popup="#reviews" data-popup-youtube="QzL5QUf8fhg">
-									<div class="item-reviews-block__image-ibg">
-										<picture><source data-srcset="img/main-page/reviews-block/02.webp" type="image/webp"><img data-src="img/main-page/reviews-block/02.png" alt="Картинка" /></picture>
+								</a>
+								<a href="#" class="reviews-block__slide swiper-slide reviews-item" tabindex="0" data-popup="#reviews" data-popup-youtube="QzL5QUf8fhg">
+									<div class="reviews-item__image-ibg">
+										<picture><source data-srcset="img/main-page/reviews-block/02.webp" type="image/webp"><img data-src="img/main-page/reviews-block/02.png" tabindex="0" alt="Картинка" /></picture>
 									</div>
-								</div>
-								<div class="reviews-block__slide swiper-slide item-reviews-block" data-popup="#reviews" data-popup-youtube="QzL5QUf8fhg">
-									<div class="item-reviews-block__image-ibg">
-										<picture><source data-srcset="img/main-page/reviews-block/03.webp" type="image/webp"><img data-src="img/main-page/reviews-block/03.png" alt="Картинка" /></picture>
+								</a>
+								<a href="#" class="reviews-block__slide swiper-slide reviews-item" tabindex="0" data-popup="#reviews" data-popup-youtube="QzL5QUf8fhg">
+									<div class="reviews-item__image-ibg">
+										<picture><source data-srcset="img/main-page/reviews-block/03.webp" type="image/webp"><img data-src="img/main-page/reviews-block/03.png" tabindex="0" alt="Картинка" /></picture>
 									</div>
-								</div>
-								<div class="reviews-block__slide swiper-slide item-reviews-block" data-popup="#reviews" data-popup-youtube="QzL5QUf8fhg">
-									<div class="item-reviews-block__image-ibg">
+								</a>
+								<a href="#" class="reviews-block__slide swiper-slide reviews-item" tabindex="0" data-popup="#reviews" data-popup-youtube="QzL5QUf8fhg">
+									<div class="reviews-item__image-ibg">
 										<picture><source data-srcset="img/main-page/reviews-block/04.webp" type="image/webp"><img data-src="img/main-page/reviews-block/04.png" alt="Картинка" /></picture>
 									</div>
-								</div>
-								<div class="reviews-block__slide swiper-slide item-reviews-block" data-popup="#reviews" data-popup-youtube="QzL5QUf8fhg">
-									<div class="item-reviews-block__image-ibg">
+								</a>
+								<a href="#" class="reviews-block__slide swiper-slide reviews-item" tabindex="0" data-popup="#reviews" data-popup-youtube="QzL5QUf8fhg">
+									<div class="reviews-item__image-ibg">
 										<picture><source data-srcset="img/main-page/reviews-block/05.webp" type="image/webp"><img data-src="img/main-page/reviews-block/05.png" alt="Картинка" /></picture>
 									</div>
-								</div>
+								</a>
 							</div>
 						</div>
 					</div>
-					<div class="slider-arrows">
+					<div class="slider-arrows slider-arrows--orange">
 						<button type="button" class="slider-arrow-prev reviews-slider-arrow-prev _icon-arrow"></button>
 						<button type="button" class="slider-arrow-next reviews-slider-arrow-next _icon-arrow"></button>
 					</div>
@@ -243,7 +250,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20220210170439"></script>
+	<script src="js/app.min.js?_v=20220211172244"></script>
 </body>
 
 </html>

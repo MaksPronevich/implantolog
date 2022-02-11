@@ -3759,20 +3759,22 @@
                 speed: 800,
                 breakpoints: {
                     0: {
-                        slidesPerView: 1.3,
+                        slidesPerView: 1.4,
                         spaceBetween: 20
                     },
-                    768: {
+                    479.98: {
                         slidesPerView: 2
                     },
+                    768: {
+                        slidesPerView: 3
+                    },
                     992: {
-                        slidesPerView: 3,
                         spaceBetween: 28
                     }
                 },
                 on: {}
             });
-            if (document.querySelector(".doctors__slider")) new core(".doctors__slider", {
+            if (document.querySelector(".doctors-block__slider")) new core(".doctors-block__slider", {
                 modules: [ Navigation ],
                 observer: true,
                 observeParents: true,
@@ -3786,6 +3788,9 @@
                     0: {
                         slidesPerView: 1.1,
                         spaceBetween: 18
+                    },
+                    479.98: {
+                        slidesPerView: 1.5
                     },
                     768: {
                         slidesPerView: 2,
@@ -3809,6 +3814,61 @@
                     0: {
                         slidesPerView: 1.2,
                         spaceBetween: 20
+                    },
+                    479.98: {
+                        slidesPerView: 1.7
+                    },
+                    768: {
+                        slidesPerView: 2
+                    },
+                    992: {
+                        slidesPerView: 3
+                    }
+                }
+            });
+            if (document.querySelector(".portfolio-block__slider")) new core(".portfolio-block__slider", {
+                modules: [ Navigation ],
+                observer: true,
+                observeParents: true,
+                slidesPerView: 3,
+                spaceBetween: 28,
+                navigation: {
+                    prevEl: ".portfolio-slider-arrow-prev",
+                    nextEl: ".portfolio-slider-arrow-next"
+                },
+                breakpoints: {
+                    0: {
+                        slidesPerView: 1.2,
+                        spaceBetween: 20
+                    },
+                    479.98: {
+                        slidesPerView: 1.7
+                    },
+                    768: {
+                        slidesPerView: 2
+                    },
+                    992: {
+                        slidesPerView: 3
+                    }
+                }
+            });
+            if (document.querySelector(".awards-block__slider")) new core(".awards-block__slider", {
+                modules: [ Navigation ],
+                observer: true,
+                observeParents: true,
+                slidesPerView: 3,
+                spaceBetween: 28,
+                navigation: {
+                    prevEl: ".awards-slider-arrow-prev",
+                    nextEl: ".awards-slider-arrow-next"
+                },
+                breakpoints: {
+                    0: {
+                        slidesPerView: 1.2,
+                        spaceBetween: 20
+                    },
+                    479.98: {
+                        slidesPerView: 1.7
                     },
                     768: {
                         slidesPerView: 2

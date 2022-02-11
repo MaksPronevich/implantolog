@@ -1,0 +1,45 @@
+.reviews {
+	@include adaptiveValue('padding-top', 80, 40);
+	@include adaptiveValue('padding-bottom', 80, 40);
+
+	// .reviews__container
+	&__container {
+	}
+
+	// .reviews__body
+	&__body {
+		@include adaptiveValue('margin-top', 50, 30);
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		@include adaptiveValue('gap', 28, 20);
+
+		@media (max-width: $mobile) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		@media (max-width: $mobileSmall) {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+}
+
+.reviews-item {
+	width: 100%;
+	border-radius: 10px;
+	overflow: hidden;
+	cursor: pointer;
+	transform: scale3d(1, 1, 1);
+	transition: transform 0.3s ease 0s;
+
+	@media (any-hover: hover) {
+		&:hover {
+			transform: scale3d(1.03, 1.03, 1.03);
+		}
+	}
+
+	// .item-reviews-block__image-ibg
+	&__image-ibg {
+		background-color: $mainOrange;
+		padding-bottom: percent(197, 320);
+	}
+}

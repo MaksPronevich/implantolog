@@ -36,8 +36,6 @@
 	}
 }
 
-//====================================================================================================
-
 .content-main-block {
 	position: relative;
 	z-index: 1;
@@ -47,10 +45,8 @@
 	// .content-main-block__title
 	&__title {
 		font-weight: 700;
-		font-size: rem(36);
 		@include adaptiveValue('font-size', 36, 25);
 		line-height: math.div(44, 36);
-		color: $mainColor;
 
 		&:not(:last-child) {
 			margin-bottom: em(26, 36);
@@ -59,7 +55,6 @@
 
 	// .content-main-block__text
 	&__text {
-		font-size: rem(20);
 		@include adaptiveValue('font-size', 20, 14);
 		line-height: math.div(24, 20);
 		color: #4d4d4d;
@@ -71,8 +66,6 @@
 
 	// .content-main-block__button
 	&__button {
-		padding: rem(16) rem(65);
-
 		@media (max-width: $mobile) {
 			position: absolute;
 			bottom: 5%;
@@ -81,8 +74,6 @@
 		}
 	}
 }
-
-//====================================================================================================
 
 .media-main-block {
 	position: relative;
@@ -104,8 +95,8 @@
 //====================================================================================================
 
 .about-implantation {
-	@include adaptiveValue('padding-top', 125, 40);
-	@include adaptiveValue('padding-bottom', 125, 40);
+	@include adaptiveValue('padding-top', 100, 40);
+	@include adaptiveValue('padding-bottom', 100, 40);
 
 	// .about-implantation__container
 	&__container {
@@ -135,8 +126,6 @@
 	&__item {
 	}
 }
-
-//====================================================================================================
 
 .item-about-implantation {
 	background: $mainWhite;
@@ -173,157 +162,41 @@
 
 //====================================================================================================
 
-.doctors {
+.doctors-block {
 	background-color: $mainOrange;
-	@include adaptiveValue('padding-top', 55, 25);
+	@include adaptiveValue('padding-top', 65, 25);
 	@include adaptiveValue('padding-bottom', 160, 50);
-	// @include adaptiveValue('padding-top', 125, 40);
-	// @include adaptiveValue('padding-bottom', 125, 40);
 
-	// .doctors__container
+	// .doctors-block__container
 	&__container {
 		position: relative;
 	}
 
-	// .doctors__body
+	// .doctors-block__body
 	&__body {
 		@include adaptiveValue('margin-top', 75, 30);
 	}
 
-	// .doctors__slider
+	// .doctors-block__slider
 	&__slider {
 		padding: rem(15);
 		margin: rem(-15);
 	}
 
-	// .doctors__wrapper
+	// .doctors-block__wrapper
 	&__wrapper {
 	}
 
-	// .doctors__slide
+	// .doctors-block__slide
 	&__slide {
 	}
 }
 
 //====================================================================================================
 
-.item-doctors {
-	background-color: $mainWhite;
-	box-shadow: 0px 10px 14px -1px rgba(0, 0, 0, 0.1);
-	border-radius: 5px;
-	position: relative;
-	overflow: hidden;
-
-	display: grid;
-	grid-template-columns: 1fr percent(259, 496);
-	align-items: center;
-
-	&::after {
-		content: '';
-		display: block;
-		background: rgba(231, 155, 100, 0.5);
-		filter: blur(146px);
-		position: absolute;
-		bottom: 0;
-		right: 0;
-		width: percent(340, 496);
-		height: percent(306, 306);
-	}
-
-	// .item-doctors__info
-	&__info {
-	}
-
-	// .item-doctors__media
-	&__media {
-		align-self: end;
-		justify-self: end;
-	}
-}
-
-//====================================================================================================
-
-.info-item-doctors {
-	padding: 30px 0px 30px 30px;
-	position: relative;
-	z-index: 2;
-
-	@media (max-width: $mobile) {
-		padding: 15px 0px 15px 15px;
-	}
-
-	// .info-item-doctors__title
-	&__title {
-		font-weight: 600;
-		@include adaptiveValue('font-size', 24, 18);
-		line-height: math.div(26, 24);
-		letter-spacing: 0.035em;
-		text-transform: capitalize;
-		color: $mainOrange;
-
-		&:not(:last-child) {
-			margin-bottom: em(15, 24);
-		}
-	}
-
-	// .info-item-doctors__text
-	&__text {
-		font-weight: 500;
-		@include adaptiveValue('font-size', 14, 9);
-		line-height: math.div(16, 14);
-		letter-spacing: 0.035em;
-		color: #4d4d4d;
-
-		&:not(:last-child) {
-			margin-bottom: em(30, 14);
-		}
-	}
-
-	// .info-item-doctors__link
-	&__link {
-		display: inline-block;
-		font-weight: 600;
-		font-size: rem(14);
-		line-height: math.div(17, 14);
-		color: $mainOrange;
-		padding: rem(12) rem(29);
-		border: 1px solid $mainOrange;
-		border-radius: 5px;
-		transition: all 0.3s ease 0s;
-
-		@media (max-width: $mobile) {
-			font-size: 11px;
-			padding: rem(9) rem(20);
-		}
-
-		@media (any-hover: hover) {
-			&:hover {
-				color: $mainWhite;
-				background-color: $mainOrange;
-			}
-		}
-	}
-}
-
-//====================================================================================================
-
-.media-item-doctors {
-	position: relative;
-	z-index: 1;
-
-	img {
-		max-width: 100%;
-	}
-}
-
-//====================================================================================================
-
 .consultation-block {
-	// @include adaptiveValue('padding-top', 175, 65);
-	// @include adaptiveValue('padding-bottom', 175, 65);
-
-	@include adaptiveValue('padding-top', 125, 40);
-	@include adaptiveValue('padding-bottom', 125, 40);
+	@include adaptiveValue('padding-top', 100, 40);
+	@include adaptiveValue('padding-bottom', 100, 40);
 
 	// .consultation-block__container
 	&__container {
@@ -355,12 +228,22 @@
 	}
 }
 
-//====================================================================================================
-
 .info-consultation-block {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+
+	@media (max-width: $tablet) {
+		align-items: center;
+	}
+
 	// .info-consultation-block__list
 	&__list {
 		margin-top: rem(40);
+
+		&:not(:last-child) {
+			margin-bottom: em(45, 17);
+		}
 	}
 
 	// .info-consultation-block__item
@@ -407,11 +290,9 @@
 //====================================================================================================
 
 .reviews-block {
-	// @include adaptiveValue('padding-top', 45, 30);
-	// @include adaptiveValue('padding-bottom', 200, 65);
+	@include adaptiveValue('padding-top', 100, 40);
+	@include adaptiveValue('padding-bottom', 100, 40);
 
-	@include adaptiveValue('padding-top', 125, 40);
-	@include adaptiveValue('padding-bottom', 125, 40);
 	// .reviews-block__container
 	&__container {
 		position: relative;
@@ -434,25 +315,88 @@
 
 	// .reviews-block__slide
 	&__slide {
-		cursor: pointer;
-		transform: scale3d(1, 1, 1);
-		transition: transform 0.3s ease 0s;
-
-		@media (any-hover: hover) {
-			&:hover {
-				transform: scale3d(1.03, 1.03, 1.03);
-			}
-		}
 	}
 }
 
-.item-reviews-block {
-	width: percent(320, 1015);
+//====================================================================================================
+
+.portfolio-block {
+	@include adaptiveValue('padding-top', 100, 40);
+	@include adaptiveValue('padding-bottom', 100, 40);
+
+	// .portfolio-block__container
+	&__container {
+		position: relative;
+	}
+
+	// .portfolio-block__body
+	&__body {
+		@include adaptiveValue('margin-top', 50, 30);
+	}
+
+	// .portfolio-block__slider
+	&__slider {
+	}
+
+	// .portfolio-block__wrapper
+	&__wrapper {
+	}
+
+	// .portfolio-block__slide
+	&__slide {
+	}
+}
+
+.portfolio-item {
+	width: 100%;
 	border-radius: 10px;
 	overflow: hidden;
 
-	// .item-reviews-block__image-ibg
+	// .portfolio-item__image-ibg
 	&__image-ibg {
+		background-color: $mainOrange;
+		padding-bottom: percent(197, 320);
+	}
+}
+
+//====================================================================================================
+
+.awards-block {
+	background-color: $mainOrange;
+	@include adaptiveValue('padding-top', 65, 25);
+	@include adaptiveValue('padding-bottom', 160, 50);
+
+	// .awards-block__container
+	&__container {
+		position: relative;
+	}
+
+	// .awards-block__body
+	&__body {
+		@include adaptiveValue('margin-top', 50, 30);
+	}
+
+	// .awards-block__slider
+	&__slider {
+	}
+
+	// .awards-block__wrapper
+	&__wrapper {
+	}
+
+	// .awards-block__slide
+	&__slide {
+	}
+}
+
+.awards-item {
+	width: 100%;
+	border-radius: 10px;
+	overflow: hidden;
+
+	// .awards-item__image-ibg
+	&__image-ibg {
+		background-color: $mainWhite;
 		padding-bottom: percent(197, 320);
 	}
 }

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{ "title":"Блог" })
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<section class="blog">
+					<div class="blog__container">
+						<h2 class="title title--left">Блог</h2>
+						<div class="blog__menu blog-menu">
+							<nav class="blog-menu__body">
+								<ul class="blog-menu__list">
+									<li class="blog-menu__item blog-item-active">
+										<a href="" class="blog-menu__link">Все разделы</a>
+									</li>
+									<li class="blog-menu__item">
+										<a href="" class="blog-menu__link">Самое важное</a>
+									</li>
+									<li class="blog-menu__item">
+										<a href="" class="blog-menu__link">Комплексная имплантация</a>
+									</li>
+									<li class="blog-menu__item">
+										<a href="" class="blog-menu__link">Классическая имплантация</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<div class="blog__body"></div>
+					</div>
+				</section>
+			</main>
+
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+	</body>
+</html>

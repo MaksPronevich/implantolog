@@ -6,7 +6,6 @@
 	border-radius: 5px;
 	transition: background-color 0.3s ease 0s;
 	text-align: center;
-
 	background-color: $mainOrange;
 	color: $mainWhite;
 
@@ -15,16 +14,69 @@
 			background-color: darken($mainOrange, 5%);
 		}
 	}
+
+	&--header {
+		padding: rem(16) rem(18);
+
+		@media (max-width: $mobileSmall) {
+			font-size: rem(16);
+			width: 100%;
+		}
+	}
+
+	&--main-block {
+		padding: rem(16) rem(65);
+	}
+
+	&--consultation-block {
+		padding: rem(16) rem(18);
+
+		@media (max-width: $mobileSmall) {
+			font-size: rem(16);
+			width: 100%;
+		}
+	}
 }
 
 //====================================================================================================
 
-.section-title {
+.title {
 	font-weight: 600;
 	font-size: rem(30);
 	@include adaptiveValue('font-size', 30, 24);
 	line-height: math.div(36, 30);
 	text-align: center;
+
+	&._secure-padding {
+		@media (min-width: $tablet) {
+			padding: 0 rem(160);
+		}
+	}
+
+	&--white {
+		color: $mainWhite;
+	}
+
+	&--left {
+		text-align: left;
+	}
+
+	&--left-center {
+		text-align: left;
+
+		@media (max-width: $mobile) {
+			text-align: center;
+		}
+	}
+}
+
+.subtitle {
+	// font-weight: 400;
+	@include adaptiveValue('margin-top', 30, 12);
+	@include adaptiveValue('font-size', 18, 14);
+	line-height: math.div(19, 14);
+	text-align: center;
+	color: #4d4d4d;
 
 	&._secure-padding {
 		@media (min-width: $tablet) {
@@ -58,6 +110,82 @@
 	@media (max-width: $tablet) {
 		display: none;
 	}
+
+	&--white {
+		button {
+			border: 2px solid $mainWhite;
+
+			&.swiper-button-disabled {
+				border: 2px solid rgba($mainWhite, 0.5);
+
+				&::before {
+					color: rgba($mainWhite, 0.5);
+				}
+
+				@media (any-hover: hover) {
+					&:hover {
+						background: none;
+
+						&::before {
+							color: rgba($mainWhite, 0.5);
+						}
+					}
+				}
+			}
+
+			&::before {
+				color: $mainWhite;
+			}
+
+			@media (any-hover: hover) {
+				&:hover {
+					background-color: $mainWhite;
+
+					&::before {
+						color: $mainOrange;
+					}
+				}
+			}
+		}
+	}
+
+	&--orange {
+		button {
+			border: 2px solid $mainOrange;
+
+			&.swiper-button-disabled {
+				border: 2px solid rgba($mainOrange, 0.5);
+
+				&::before {
+					color: rgba($mainOrange, 0.5);
+				}
+
+				@media (any-hover: hover) {
+					&:hover {
+						background: none;
+
+						&::before {
+							color: rgba($mainOrange, 0.5);
+						}
+					}
+				}
+			}
+
+			&::before {
+				color: $mainOrange;
+			}
+
+			@media (any-hover: hover) {
+				&:hover {
+					background-color: $mainOrange;
+
+					&::before {
+						color: $mainWhite;
+					}
+				}
+			}
+		}
+	}
 }
 
 .slider-arrow-prev,
@@ -84,83 +212,6 @@
 
 .slider-arrow-prev {
 	transform: rotate(180deg);
-}
-
-.slider-arrow-next {
-}
-
-.doctors-slider-arrow-prev,
-.doctors-slider-arrow-next {
-	border: 2px solid $mainWhite;
-
-	&.swiper-button-disabled {
-		border: 2px solid rgba($mainWhite, 0.5);
-
-		&::before {
-			color: rgba($mainWhite, 0.5);
-		}
-
-		@media (any-hover: hover) {
-			&:hover {
-				background: none;
-
-				&::before {
-					color: rgba($mainWhite, 0.5);
-				}
-			}
-		}
-	}
-
-	&::before {
-		color: $mainWhite;
-	}
-
-	@media (any-hover: hover) {
-		&:hover {
-			background-color: $mainWhite;
-
-			&::before {
-				color: $mainOrange;
-			}
-		}
-	}
-}
-
-.reviews-slider-arrow-prev,
-.reviews-slider-arrow-next {
-	border: 2px solid $mainOrange;
-
-	&.swiper-button-disabled {
-		border: 2px solid rgba($mainOrange, 0.5);
-
-		&::before {
-			color: rgba($mainOrange, 0.5);
-		}
-
-		@media (any-hover: hover) {
-			&:hover {
-				background: none;
-
-				&::before {
-					color: rgba($mainOrange, 0.5);
-				}
-			}
-		}
-	}
-
-	&::before {
-		color: $mainOrange;
-	}
-
-	@media (any-hover: hover) {
-		&:hover {
-			background-color: $mainOrange;
-
-			&::before {
-				color: $mainWhite;
-			}
-		}
-	}
 }
 
 //====================================================================================================
@@ -196,3 +247,5 @@
 		width: 100%;
 	}
 }
+
+//====================================================================================================
