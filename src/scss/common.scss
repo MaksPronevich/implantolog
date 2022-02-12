@@ -71,7 +71,6 @@
 }
 
 .subtitle {
-	// font-weight: 400;
 	@include adaptiveValue('margin-top', 30, 12);
 	@include adaptiveValue('font-size', 18, 14);
 	line-height: math.div(19, 14);
@@ -249,3 +248,20 @@
 }
 
 //====================================================================================================
+
+.link-back {
+	position: absolute;
+	top: 5%;
+	left: 20%;
+	z-index: 1;
+	padding: rem(10) 0;
+	display: flex;
+	align-items: center;
+	color: $mainOrange;
+	font-size: rem(14);
+
+	&::before {
+		transform: rotate(180deg);
+		margin-right: em(10, 14);
+	}
+}

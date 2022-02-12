@@ -130,6 +130,10 @@
 	@include adaptiveValue('padding-top', 65, 25);
 	@include adaptiveValue('padding-bottom', 160, 50);
 
+	&--white {
+		background-color: $mainWhite;
+	}
+
 	// .doctors-block__container
 	&__container {
 		position: relative;
