@@ -3749,7 +3749,7 @@
             });
         }
         function initSliders() {
-            if (document.querySelector(".about-implantation__slider")) new core(".about-implantation__slider", {
+            if (document.querySelector(".blog-block__slider")) new core(".blog-block__slider", {
                 modules: [ Navigation ],
                 observer: true,
                 observeParents: true,
@@ -3759,7 +3759,7 @@
                 speed: 800,
                 breakpoints: {
                     0: {
-                        slidesPerView: 1.4,
+                        slidesPerView: 1.2,
                         spaceBetween: 20
                     },
                     479.98: {
@@ -3838,8 +3838,8 @@
                 },
                 breakpoints: {
                     0: {
-                        slidesPerView: 1.2,
-                        spaceBetween: 20
+                        slidesPerView: 1.3,
+                        spaceBetween: 15
                     },
                     479.98: {
                         slidesPerView: 1.7
@@ -3864,8 +3864,8 @@
                 },
                 breakpoints: {
                     0: {
-                        slidesPerView: 1.2,
-                        spaceBetween: 20
+                        slidesPerView: 1.3,
+                        spaceBetween: 15
                     },
                     479.98: {
                         slidesPerView: 1.7

@@ -27,10 +27,10 @@ import '../../scss/base/swiper.scss';
 function initSliders() {
 	// Перечень слайдеров
 	// Проверяем, есть ли слайдер на стронице
-	if (document.querySelector('.about-implantation__slider')) {
+	if (document.querySelector('.blog-block__slider')) {
 		// Указываем скласс нужного слайдера
 		// Создаем слайдер
-		new Swiper('.about-implantation__slider', {
+		new Swiper('.blog-block__slider', {
 			// Указываем скласс нужного слайдера
 			// Подключаем модули слайдера
 			// для конкретного случая
@@ -83,7 +83,7 @@ function initSliders() {
 
 			breakpoints: {
 				0: {
-					slidesPerView: 1.4,
+					slidesPerView: 1.2,
 					spaceBetween: 20,
 				},
 				479.98: {
@@ -289,8 +289,8 @@ function initSliders() {
 
 			breakpoints: {
 				0: {
-					slidesPerView: 1.2,
-					spaceBetween: 20,
+					slidesPerView: 1.3,
+					spaceBetween: 15,
 				},
 				479.98: {
 					slidesPerView: 1.7,
@@ -354,8 +354,8 @@ function initSliders() {
 
 			breakpoints: {
 				0: {
-					slidesPerView: 1.2,
-					spaceBetween: 20,
+					slidesPerView: 1.3,
+					spaceBetween: 15,
 				},
 				479.98: {
 					slidesPerView: 1.7,

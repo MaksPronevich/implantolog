@@ -200,3 +200,33 @@
 		color: #4d4d4d;
 	}
 }
+
+//====================================================================================================
+
+.doctor-content {
+	background-color: #f6f6f6;
+	@include adaptiveValue('padding-top', 100, 40);
+	@include adaptiveValue('padding-bottom', 100, 40);
+
+	// .doctor-content__container
+	&__container {
+	}
+
+	// .doctor-content__body
+	&__body {
+		max-width: rem(800);
+		margin: 0 auto;
+	}
+
+	// .doctor-content__video
+	&__video {
+		@extend %responsiveVideo;
+	}
+
+	// .doctor-content__info
+	&__info {
+		@include adaptiveValue('margin-top', 75, 30);
+	}
+}
+
+//====================================================================================================
