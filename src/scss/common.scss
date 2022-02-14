@@ -250,9 +250,10 @@
 //====================================================================================================
 
 .link-back {
+	padding: rem(10) 0;
 	position: absolute;
-	top: 5%;
-	left: 20%;
+	top: rem(20);
+	left: rem(15);
 	z-index: 1;
 	padding: rem(10) 0;
 	display: flex;
@@ -260,8 +261,22 @@
 	color: $mainOrange;
 	font-size: rem(14);
 
+	span {
+		border-bottom: 1px solid transparent;
+		transition: border-bottom 0.2s ease 0s;
+	}
+
 	&::before {
-		transform: rotate(180deg);
-		margin-right: em(10, 14);
+		font-size: rem(10);
+		transform: rotate(180deg) translateY(rem(1));
+		margin-right: 5px;
+	}
+
+	@media (any-hover: hover) {
+		&:hover {
+			span {
+				border-bottom: 1px solid $mainOrange;
+			}
+		}
 	}
 }

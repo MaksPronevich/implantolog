@@ -316,18 +316,6 @@
 	}
 }
 
-.portfolio-item {
-	width: 100%;
-	border-radius: 10px;
-	overflow: hidden;
-
-	// .portfolio-item__image-ibg
-	&__image-ibg {
-		background-color: $mainOrange;
-		padding-bottom: percent(197, 320);
-	}
-}
-
 //====================================================================================================
 
 .awards-block {
