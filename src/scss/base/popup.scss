@@ -56,7 +56,7 @@ body::after {
 	visibility: hidden;
 	transform: scale(0);
 	transition: transform 0.1s ease 0s;
-	background-color: #eee;
+	background-color: $mainWhite;
 	width: 100%;
 	border-radius: 10px;
 	position: relative;
@@ -75,7 +75,7 @@ body::after {
 	}
 
 	&--consultation {
-		max-width: 500px;
+		max-width: 400px;
 		padding: 30px;
 	}
 }
@@ -107,4 +107,71 @@ body::after {
 
 .popup__video-wrap {
 	@extend %responsiveVideo;
+}
+
+.popup {
+	// .popup__body
+	&__body {
+		padding: rem(65) rem(30) rem(40) rem(30);
+
+		@media (max-width: $mobile) {
+			padding: rem(55) rem(15) rem(30) rem(15);
+		}
+	}
+
+	// .popup__title
+	&__title {
+		font-weight: 600;
+		font-size: rem(22);
+		line-height: math.div(26, 22);
+		letter-spacing: 0.03em;
+	}
+
+	// .popup__form
+	&__form {
+		margin-top: rem(50);
+	}
+}
+
+.form-popup {
+	display: flex;
+	flex-direction: column;
+	// align-items: center;
+
+	// .form-popup__input
+	&__input {
+		width: 100%;
+		border-bottom: 1px solid #c5c4c4;
+		padding: rem(10) 0;
+
+		&::placeholder {
+			color: #c5c4c4;
+		}
+
+		&:not(:last-child) {
+			margin-bottom: rem(25);
+		}
+
+		&:focus {
+			outline: none;
+			border-bottom: 1px solid rgba($mainColor, 0.7);
+
+			&::placeholder {
+				color: rgba($mainColor, 0.7);
+			}
+		}
+
+		&.error {
+			border-bottom: 1px solid #de5871;
+
+			&::placeholder {
+				color: #de5871;
+			}
+		}
+	}
+
+	// .form-popup__button
+	&__button {
+		margin-top: rem(65);
+	}
 }

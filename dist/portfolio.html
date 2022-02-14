@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220214140418">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220214170232">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -114,11 +114,19 @@
 		<div class="popup__wrapper">
 			<div class="popup__content popup__content--consultation">
 				<button data-close type="button" class="popup__close _icon-close"></button>
-				<div class="popup__text">form</div>
+				<div class="popup__body">
+					<h2 class="popup__title">Записаться на консультацию</h2>
+					<form action="#" class="popup__form form-popup">
+						<input autocomplete="off" type="text" placeholder="Ваше имя" class="form-popup__input" />
+						<input autocomplete="off" type="email" placeholder="Ваше email" class="form-popup__input" />
+						<input autocomplete="off" type="phone" name="phone" placeholder="" class="form-popup__input" />
+						<button type="submit" class="form-popup__button button button--form">Отправить заявку</button>
+					</form>
+				</div>
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20220214140418"></script>
+	<script src="js/app.min.js?_v=20220214170232"></script>
 </body>
 
 </html>
