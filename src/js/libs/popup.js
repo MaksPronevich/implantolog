@@ -115,9 +115,7 @@ class Popup {
 				const buttonOpen = e.target.closest(`[${this.options.attributeOpenButton}]`);
 				if (buttonOpen) {
 					e.preventDefault();
-					this._dataValue = buttonOpen.getAttribute(this.options.attributeOpenButton)
-						? buttonOpen.getAttribute(this.options.attributeOpenButton)
-						: 'error';
+					this._dataValue = buttonOpen.getAttribute(this.options.attributeOpenButton) ? buttonOpen.getAttribute(this.options.attributeOpenButton) : 'error';
 					this.youTubeCode = buttonOpen.getAttribute(this.options.youtubeAttribute) ? buttonOpen.getAttribute(this.options.youtubeAttribute) : null;
 					if (this._dataValue !== 'error') {
 						if (!this.isOpen) this.lastFocusEl = buttonOpen;

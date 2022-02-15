@@ -286,9 +286,11 @@
 }
 
 //====================================================================================================
+.iti-mobile .iti--container {
+}
 
-.iti {
-	width: 100%;
+.iti__selected-flag {
+	background-color: $mainWhite !important;
 }
 
 .iti__flag {

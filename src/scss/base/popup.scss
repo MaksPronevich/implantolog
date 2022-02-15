@@ -66,7 +66,7 @@ body::after {
 	}
 
 	&--reviews {
-		max-width: 1400px;
+		max-width: 1200px;
 		padding: rem(60) rem(20) rem(30);
 
 		@media (max-width: $mobile) {

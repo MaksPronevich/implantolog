@@ -74,10 +74,10 @@ function initSliders() {
 			*/
 
 			// Кнопки "влево/вправо"
-			// navigation: {
-			// 	prevEl: '.swiper-button-prev',
-			// 	nextEl: '.swiper-button-next',
-			// },
+			navigation: {
+				prevEl: '.blog-slider-arrow-prev',
+				nextEl: '.blog-slider-arrow-next',
+			},
 
 			// Брейкпоинты
 
