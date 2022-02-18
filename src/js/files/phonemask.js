@@ -3,7 +3,7 @@ import { flsModules } from './modules.js';
 
 import intlTelInput from 'intl-tel-input';
 import './forms/inputmask.js';
-import 'intl-tel-input/build/css/intlTelInput.css';
+// import 'intl-tel-input/build/css/intlTelInput.css';
 import * as utils from '../libs/utils.js';
 // import '../libs/jquery.maskedinput.min.js';
 
